@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Metodo de Pago</title>
+  
+    <link rel="stylesheet" href="Css/pago.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form">
+  <button class="btnn"><a href="index.html"><ion-icon name="home-outline"></ion-icon></a></button></div>
+        <h2>Realizar Pago</h2>
+        <form id="pagoForm" action="procesar_pago.php" method="POST">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="monto">Monto a pagar</label>
+            <input type="number" id="monto" name="monto" min="1" required />
+
+            <label for="metodo">Método de pago</label>
+            <select id="metodo" name="metodo" required>
+                <option value="">Seleccione un método</option>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+
+            <button type="submit">Pagar</button>
+        </form>
+        <div id="mensaje"></div>
+    </div>
+
+    
+    <script src="Script/pago.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

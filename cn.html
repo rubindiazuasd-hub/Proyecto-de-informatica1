@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prueba Notificaciones y Sonido</title>
+</head>
+<body>
+<div style="margin: 50px;">
+  <button id="campana" style="font-size: 24px; padding: 10px;">🔔 Pulsar para Notificación</button>
+</div>
+
+<audio id="sonidoCampana" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+
+<script>
+  const campanaBtn = document.getElementById('campana');
+  const sonido = document.getElementById('sonidoCampana');
+
+  // Solicitar permiso para notificaciones automáticamente
+  if (Notification.permission !== 'granted') {
+    Notification.requestPermission().then(permission => {
+      console.log('Permiso tras solicitud:', permission);
+    });
+  } else {
+    console.log('Permiso ya concedido:', Notification.permission);
+  }
+
+  campanaBtn.addEventListener('click', () => {
+    // Reproducir sonido
+    sonido.currentTime = 0;
+    sonido.play().catch(e => console.log('Error al reproducir sonido:', e));
+
+    // Mostrar notificación solo si permitido
+    if (Notification.permission === 'granted') {
+      new Notification('¡Notificación de STEAD!');
+    } else {
+      console.log('No se puede mostrar notificación, permiso:', Notification.permission);
+    }
+  });
+</script>
+</body>
+</html>

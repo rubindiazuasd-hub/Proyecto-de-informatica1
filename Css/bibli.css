@@ -1,0 +1,148 @@
+body{
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.notificacion{
+  display: flex;
+  float: left;
+  gap: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #2895bc;
+background: #525bfcb3;
+padding: 5px;
+}
+#container{
+    width: 79%;
+    width: 1220px;
+}
+nav {
+    background: rgb(55, 174, 238);
+    background-color: #28bdee;
+    height: 50px;
+    width: 1244PX;
+
+}
+
+nav ul li {
+    margin-right: 10px; 
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    border: #050303;
+    background-color: #F5A327;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-variant-caps: normal;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+nav ul n {
+  float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30%;
+
+}
+ul li a {
+    text-decoration: none;
+    color: #121010;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+ul li a:hover{
+  color: #fdfafa;
+
+}
+
+.clearfix{
+    clear: both;
+}
+#content{
+    float: left;
+    width: 80%;
+
+}
+.sidebar{
+width: 230px;
+float: left;
+margin-left: 170px;
+
+}
+.cont-img{
+position: relative;
+display: inline-block;
+text-decoration: none;
+}
+.cont-img img{
+    display: block;
+    width: 100%;
+}
+
+.text-imagenes{
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    colo:white;
+    font-size: 20px;
+    background-color:rgb(221, 231, 221);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.text-imagenes:hover{
+    background: #F5A327;
+}
+#ima{
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+}
+.icon a:hover{
+    background: #F5A327;
+}
+ 
+.cn{
+    width: 240px;
+  height: 40px;
+  background-color: #8ac2a3;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #eb1b1b;
+  transition: 0.4s ease;
+    
+}
+.cn:hover{
+    text-decoration:none;
+    background-color: #F5A327;
+}
+.cn link:hover{
+text-decoration: none;
+}
+.cn a:hover{
+    text-decoration: none;
+}
+.cn:hover{
+    text-decoration: none;
+}
+.logo {
+  margin-right: 20px; 
+}
+
+.logo img {
+  height: 60px; 
+}
+.bg-P {
+  background-color: #f6f7f7cf;
+}

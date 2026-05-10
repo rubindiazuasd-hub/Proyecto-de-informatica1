@@ -1,0 +1,110 @@
+.nav-item{
+     margin-right: 10px; 
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e1c191;
+    display: inline-block;
+    font-variant-caps: normal;
+    transition: background-color 0.3s;
+    text-align: center;
+
+}
+.nav-link disabled .a{
+    text-decoration: none;
+}
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    background: #3d9a4692;
+     color: #bae7b989;
+}
+.nav-link a{
+    text-decoration: none;
+}
+.nav-link disabled .a{
+     margin-right: 10px; 
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e1c191;
+    display: inline-block;
+    font-variant-caps: normal;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.navbar-brand{
+
+}
+
+.navbar-brand:hover{
+    background: #e1c191;
+}
+
+.dropdown-menu .dropdown-item{
+    background: #e1c191;
+}
+.dropdown-menu,
+.dropdown-item :hover{
+    background: #70f57b9a;
+}
+.nav-item{
+    background: #e1c191;
+    text-decoration: none;
+}
+
+.nav-item :hover{
+    background: #36e43f37;
+    outline: none;
+}
+/*Icono*/
+
+#icono{
+    background: #5e8fba4e;
+    padding: 4px;
+    
+}
+#icono{
+    text-decoration: none;
+    color: #1c3eac9d;
+}
+
+#icono:hover{
+    color: rgba(17, 23, 203, 0.134);
+}
+
+.icon a{
+  text-decoration: none;
+  color: #f1f0f3;
+  text-align: center;
+}
+
+.icon ion-icon{
+  color: #021839;
+  font-size: 20px;
+  padding-left: 14;
+  padding-top: 3px;
+  transition: 0.3s ease;
+  
+}
+.icon ion-icon:hover{
+  color: orangered
+}
+
+
+.logo {
+  margin-right: 20px; 
+}
+
+.logo img {
+  height: 60px; 
+}
+.bg-P {
+  background-color: #f6f7f7cf;
+}
